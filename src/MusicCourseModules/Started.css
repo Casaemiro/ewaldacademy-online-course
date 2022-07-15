@@ -1,0 +1,20 @@
+.intro-text {
+    /* width: 100%; */
+    padding: 2%;
+    /* background-color: red; */
+}
+.intro-img {
+    border: 1px solid rgba(0, 128, 0, 0.212);
+    border-radius: 5px;
+    height: 30vh;
+    width: 50%;
+    margin-left: 2%;
+}
+/* .strt-section {
+    display: none;
+} */
+@media only screen and (max-width: 980px) {
+   .intro-img {
+       width: 96%;
+   }
+}

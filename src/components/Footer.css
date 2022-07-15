@@ -1,0 +1,24 @@
+.footer-section {
+    text-align: center;
+    /* height: 20vh; */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.607);
+    border-top: 1px solid rgba(0, 0, 0, 0.162);
+    font-size: 0.8rem;
+}
+.footer-section a {
+    padding: 0.6%;
+    color: rgba(255, 255, 255, 0.525);
+}
+.footer-section a:hover {
+    color: rgba(255, 255, 255, 0.882);
+}
+@media only screen and (max-width: 660px) {
+    .footer-section {
+        flex-wrap: wrap;
+    }
+}

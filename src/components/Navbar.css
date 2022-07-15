@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: auto;
+    top: 2.7rem;
+    display: none;
+    transition-duration: 500ms;
+    
+}
+.mobileMenu a {
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: rgb(1, 40, 1);
+}
+.lgo {
+    width: 60px;
+}
+
+.menuIcon {
+    display: none;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+title {
+    color: red
+}
+
+.top-nav {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 4.5rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0.3px 10px rgba(0, 0, 0, 0.327);
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background-color: rgba(255, 217, 0, 0.579); */
+    width: 4%;
+    padding-left: 3%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-right: 5px;
+
+}
+
+.newSearch {
+    display: none;
+}
+
+.top-nav-area {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    /* background-color: blue; */
+    width: 25%;
+}
+
+.evt {
+    margin-right: 1%;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    padding-left: 2%;
+}
+
+.search-button {
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 36px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+    color: gold;
+    background-color: #022910e6;
+}
+
+.search-button:hover {
+    background-color: #0229108e;
+    transition-duration: 400ms;
+}
+
+.search-form {
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid black;
+}
+
+.logo-area {
+    font-size: 2.5rem;
+    padding-left: 15%;
+    padding-right: 5px;
+    font-weight: bold;
+    /* background-color: green; */
+}
+
+input {
+    height: 2rem;
+}
+
+button {
+    height: 2rem;
+}
+
+.nav-right {
+    margin-left: auto;
+    width: 680px;
+    /* background-color: brown; */
+}
+
+.nav-right a {
+    padding-right: 3%;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+@media only screen and (max-width: 1330px) {}
+
+@media only screen and (max-width: 1228px) {
+    .nav-left {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 868px) {
+    .top-nav-area {
+        display: none;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .newSearch {
+        display: contents;
+        margin-right: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+    .lgo {
+        width: 40px;
+    }
+
+    .top-nav {
+        height: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 660px) {
+    .nav-right {
+        display: none;
+    }
+
+    .nav-left {
+        background-color: transparent;
+    }
+
+    .menuIcon {
+        display: flex;
+        margin-left: auto;
+        margin-right: 2rem;
+
+    }
+    .mobileMenu {
+        display: flex;
+        /* right: -10rem; */
+        background-color: white;
+        border-radius: 3px;
+        padding: 2%;
+        display: none;
+        font-size: 0.9rem;
+        transition-duration: 500ms;
+        /* left: -5rem; */
+        width: 98%;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+    .nav-right {
+        text-align: center;
+        font-size: 0.8rem;
+
+    }
+}
+
+@media only screen and (max-width: 588px) {
+    /* .top-nav-area {
+        display: none;
+
+    }
+    .search-button {
+        display: none;
+    } */
+
+}
+
+
+@media only screen and (max-width:524px) {
+    .nav-right {
+        position: absolute;
+        margin-top: 110px;
+        color: white;
+        margin-left: -50px;
+    }
+
+    .nav-right a {
+        color: white;
+    }
+
+    .nav-right a:Hover {
+        color: white;
+    }
+
+    .top-nav-area {
+        margin-left: 20%;
+    }
+}

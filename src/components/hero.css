@@ -1,0 +1,113 @@
+.hero-section {
+    text-align: left;
+    /* background-color: green; */
+    
+    background-image: url('../images/DSC_2415.JPG');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* margin-top: 3%; */
+}
+.secbtn:hover {
+    border: 1px solid white;
+}
+.colorgame:hover {
+    color:rgb(255, 217, 0);
+}
+.overl {
+    background-color: rgba(10, 50, 0, 0.574);
+    padding: 7%;
+    height:50vh;
+  
+}
+.large-hero-text {
+    font-size: 4.7rem;
+    font-weight: 1000;
+    color: rgba(255, 255, 255, 0.892);
+    margin-top: 3%;
+    line-height: 85px;
+    margin-bottom: 2%;
+    text-align: left;
+}
+.hero-2 {
+    font-size: 1.6rem;
+    color:rgba(255, 217, 0, 0.604);
+    margin-bottom: 2%;
+}
+.button-section{
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: gold;
+    border: 1px solid gold;
+    height: 40px;
+  }.button-section:hover{
+    background-color: transparent;
+    transition-duration: 300ms;
+    color: white;
+  }
+.btn2 {
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+}
+.btn-sec {
+    width: 100%;
+}
+@media only screen and (max-width: 980px) {
+    .large-hero-text {
+        font-size: 3.6rem;
+        text-align: left;
+    }
+    .hero-2 {
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .large-hero-text {
+        font-size: 2.4rem;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 10%;
+    }
+    .hero-2 {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .button-section {
+        margin: 0% auto;
+        width: 150px;
+    }
+    .overl {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-sec {
+        display: flex;
+        width: auto;
+        /* background-color: green; */
+    }
+}
+
+@media only screen and (max-width: 488px) {
+   .large-hero-text {
+    font-size: 1.6rem;
+   }
+   #howto {
+    font-size: 0.7rem;
+    width: 100px;
+    /* padding: 2%; */
+   }
+}
+@media only screen and (max-width:339px) {
+    .large-hero-text {
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
+}
