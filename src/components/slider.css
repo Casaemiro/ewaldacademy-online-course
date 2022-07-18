@@ -1,0 +1,22 @@
+.slder {
+    margin: 5%;
+    /* height: 50vh; */
+    color: white;
+}
+.slder img {
+    width: 700px;
+    margin: 0% auto;
+    border-radius: 5px;
+}
+.cstm {
+        background-color: rgba(0, 0, 0, 0.519);
+        border-radius: 5px;
+    } 
+@media only screen and (max-width: 796px) {
+    .slder img {
+        width: 100%;
+    }   
+}
+@media only screen and (max-width: 726px) {
+    
+}
