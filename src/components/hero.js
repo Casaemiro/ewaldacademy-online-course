@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className="btn-sec">
                 <a href="/courselist"><button className="button-section" id="howto">Online Courses</button></a>
-                <button className="button-section secbtn" id="howto" style={{backgroundColor:"transparent", marginLeft:"1rem", color:"white"}}>Admission</button>
+                <a href="Admission"><button className="button-section secbtn" id="howto" style={{backgroundColor:"transparent", marginLeft:"1rem", color:"white"}}>Admission</button></a>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ import aboutimg2 from '../images/DSC_2630.JPG'
 const About = () => {
     return (
         <>
-        <div className='mission'>
+        <div className=' qualityinfo'>
         Ewald music academy is a branch of <b>Ewald</b> based in Buea that effectively trains musicians and sound engineers in the fields of music and thearther arts as a whole. By training musicians and technicians, we provide a solution to sustainable developement goals (poverty, unemployment).
 
         </div>

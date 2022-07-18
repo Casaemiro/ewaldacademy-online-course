@@ -19,7 +19,7 @@ const Navbar = () => {
                 {/* <div className="logo-area">
                     <a href="/" style={{textDecoration:"none",color:"black"}}></a>
                 </div> */}
-                <img src={logo} alt="" className="lgo"/>
+                <a href="/"><img src={logo} alt="" className="lgo"/></a>
             </div>
             <form className="top-nav-area">
                 <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} />
