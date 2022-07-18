@@ -17,9 +17,11 @@ body {
     
 }
 .mobileMenu a {
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     text-decoration: none;
     color: rgb(1, 40, 1);
+    border-top: 1px solid black;
+    /* width: 100%; */
 }
 .lgo {
     width: 60px;

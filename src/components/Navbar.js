@@ -27,8 +27,8 @@ const Navbar = () => {
             </form><button onClick={displaySearch} onSubmit={displaySearch} className="search-button">SEARCH</button>
             <div className="nav-right">
                 <a href="/"><i className="fa-solid fa-magnifying-glass newSearch" style={{paddingRight:"2%"}}></i></a>
-                <a href="/">Admissions</a>
-                <a href="musiccourse">Courses</a>
+                <a href="admission">Admissions</a>
+                <a href="courselist">Courses</a>
                 <a href="/">Sponsor</a>
                 <a href="/">Events</a>
 
@@ -51,8 +51,8 @@ const Navbar = () => {
             </div>
             <div className='mobileMenu'>
             <a href="/" style={{ marginLeft:"1rem"}}><i className="fa-solid fa-magnifying-glass newSearch"></i></a>
-                <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Admissions</a>
-                <a href="/musiccourse" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</a>
+                <a href="admission" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Admissions</a>
+                <a href="/courselist" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</a>
                 <a href="#howto" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Sponsor</a>
 
                 {/* <select className='evt'>

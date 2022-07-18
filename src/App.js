@@ -6,6 +6,8 @@ import Contactus from './components/Contactus'
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import MusicBasics from './Pages/MusicBasics';
+import Admission from './Pages/Admission';
+import CourseList from './Pages/CourseList';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/contactus" element={<></>}/>
         <Route path='/Abt' element={<AboutPage/>}/>
         <Route path='/musiccourse' element={<MusicBasics/>}/>
+        <Route path='/admission' element={<Admission />} />
+        <Route path='/courselist' element={<CourseList />} />
         </Routes>
 
         <Contactus />
