@@ -9,6 +9,10 @@
     background-attachment: fixed;
     /* margin-top: 3%; */
 }
+.mobihero i{
+    display: none;
+    margin-bottom: 30px;
+}
 .secbtn:hover {
     border: 1px solid white;
 }
@@ -109,5 +113,14 @@
     .large-hero-text {
         font-size: 1.2rem;
         line-height: 40px;
+    }
+    .mobihero i{
+        display: contents;
+    }
+    .hero-2 {
+        margin-bottom: 5%;
+    }
+    .mobihero2 {
+        display: none;
     }
 }

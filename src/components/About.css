@@ -10,6 +10,15 @@
     margin-bottom: 5%;
     padding-bottom: 0%;
 }
+.mission {
+    width: 70%;
+    margin: 0% auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-size: 0.9rem;
+    color: rgba(1, 58, 1, 0.59);
+}
 .aboutus-section:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.381);
 }
