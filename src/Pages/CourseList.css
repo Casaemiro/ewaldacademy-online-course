@@ -12,9 +12,9 @@
 }
 .qualityinfo {
     padding: 10px;
-    padding-top: 120px;
+    padding-top: 100px;
     width: 70%;
-    color: rgb(1, 63, 1);
+    color: rgba(1, 63, 1, 0.826);
     margin: 0% auto;
     background-color: rgba(0, 128, 0, 0.056);
     border-radius: 3px;
@@ -25,5 +25,14 @@
 @media only screen and (max-width: 611px) {
     .qualityinfo {
         width: 90%;
+        padding-top: 70px;
+        font-size: 0.8rem;
+    }
+    .faint {
+        font-size: 0.7rem;
+    }
+    .courset {
+        font-size: 0.8rem;
+
     }
 }

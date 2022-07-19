@@ -8,6 +8,7 @@ import AboutPage from './Pages/AboutPage';
 import MusicBasics from './Pages/MusicBasics';
 import Admission from './Pages/Admission';
 import CourseList from './Pages/CourseList';
+import ContactusPage from './Pages/ContactusPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Navbar />
         <Routes>
         <Route index element={<HomePage/>}/>
-        <Route path="/contactus" element={<></>}/>
+        <Route path="/contactus" element={<ContactusPage />}/>
         <Route path='/Abt' element={<AboutPage/>}/>
         <Route path='/musiccourse' element={<MusicBasics/>}/>
         <Route path='/admission' element={<Admission />} />

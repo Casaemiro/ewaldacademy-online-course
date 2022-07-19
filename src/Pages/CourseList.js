@@ -8,12 +8,13 @@ const CourseList = () => {
     return (
         <>
         <div className='qualityinfo'>
+        <p className="qualityinfo-topic">Courses</p>
             <p>
             Every course on this site has undergone a <b>quality check</b> conducted by musicians all over the country and abroad. We evaluate our courses <b>thoroughly</b> to ensure that we serve you with the best.
             </p>
         </div>
         <div className="courseList px-md-5">
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card" >
                     <img src={slide1} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -23,7 +24,7 @@ const CourseList = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide2} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -33,7 +34,7 @@ const CourseList = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide3} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -43,7 +44,7 @@ const CourseList = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide4} className="card-img-top" alt="..." />
                     <div className="card-body">

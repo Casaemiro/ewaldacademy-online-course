@@ -13,7 +13,7 @@ border-radius: 3px;
     font-size: 3rem;
     padding-bottom: 5%;
     font-weight: 800;
-    color: rgba(1, 47, 1, 0.804);
+    color: rgba(1, 47, 1, 0.615);
     text-align: center;
     width: 80%;
     margin: 0% auto;
@@ -35,7 +35,7 @@ border-radius: 3px;
     }
     .howto-steps {
         font-size: 0.9rem;
-        width: 60%;
+        width: 80%;
         padding-left: 10%;
         padding-right: 10%;
         margin: 0% auto;
@@ -44,5 +44,6 @@ border-radius: 3px;
 @media only screen and (max-width: 425px) {
     .howto-steps {
         font-size: 0.8rem;
+        width: 90%;
     }
 }

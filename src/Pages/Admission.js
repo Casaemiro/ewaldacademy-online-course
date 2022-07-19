@@ -7,12 +7,13 @@ const Admission = () => {
     return ( 
         <div className="admission">
         <div className='qualityinfo'>
-            <p>
-            <b>NOTE: </b> Ewald organizes a number of exciting trainings every year.<b>Subscribe</b> to our news feed by filling in your name and email. This way, you'll get notified each time there's something new. To <b>apply</b> for a program, choose the program and take apply now, and then fill the form that pops up and submit.
+        <p className="qualityinfo-topic">Admission</p>
+            <p >
+            <b>NOTE: </b> Ewald organizes a number of exciting trainings every year. <b>Subscribe</b> to our news feed by filling in your name and email. This way, you'll get notified each time there's something new. To <b>apply</b> for a program; click <b>apply now</b>, fill the form that pops up and click submit.
             </p>
         </div>
         <div className="courseList px-md-5">
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card" >
                     <img src={slide1} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -22,7 +23,7 @@ const Admission = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide2} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -32,7 +33,7 @@ const Admission = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide3} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -42,7 +43,7 @@ const Admission = () => {
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-lg-3 col-sm-6 col-sx-8 p-2">
+            <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                 <div className="card">
                     <img src={slide4} className="card-img-top" alt="..." />
                     <div className="card-body">
