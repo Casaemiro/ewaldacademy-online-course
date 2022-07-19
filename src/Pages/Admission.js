@@ -63,20 +63,73 @@ const Admission = () => {
             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">Application form</h5>
+                        <div className="modal-header bg-warning">
+                            <h5 className="modal-title" id="exampleModalLabel"><b>Application form</b></h5>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div className="modal-body">
-                            ...
+                        <div className="modal-body ">
+
+
+                        {/* ________________________________________________________________________ */}
+                            <div className="form-floating mb-3 col-12">
+                                <input type="text" className="form-control " id="floatingInput" placeholder="name@example.com"/>
+                                    <label for="floatingInput">Full Name</label>
+                            </div>
+                        
+                            <div className="form-floating mb-3 col-12">
+                                <input type="number" className="form-control" id="floatingPassword" placeholder="Password"/>
+                                    <label for="floatingPassword">Phone number</label>
+                            </div>
+                            <div className="form-floating mb-3 col-12">
+                                <input type="address" className="form-control" id="floatingPassword" placeholder="Password"/>
+                                    <label for="floatingPassword">Address</label>
+                            </div>
+                            <div className="form-floating mb-3 col-12">
+                                <input type="number" className="form-control" id="floatingPassword" placeholder="Password" required/>
+                                    <label for="floatingPassword" >Age</label>
+                            </div>
+                            
+                                <textarea type="number"  className="form-control form-floating col-12" id="floatingPassword" placeholder="How will this training be of help to you?" required></textarea>
+                            
+                            {/* ___________________________________________________________________________ */}
                         </div>
-                        <div className="modal-footer">
+                        <div className="modal-footer bg-warning">
                             <button type="button" className="application-btn px-3" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" className="application-btn px-3">Submit</button>
+                            <button type="button" data-bs-dismiss="modal" className="application-btn px-3" data-bs-toggle="modal"  data-bs-target="#SuccessModal">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+{/* <!-- Button trigger modal --> */}
+            {/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button> */}
+
+            {/* <!-- Modal --> */}
+            <div className="modal fade" id="SuccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header bg-warning">
+                            <h5 className="modal-title" id="exampleModalLabel"><b>Confirmation!!</b></h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body ">
+
+                        Application sent successfully. We will process your application and get back to you as soon as possible. Thanks for choosing us.
+                       
+                        </div>
+                        <div className="modal-footer bg-warning">
+                            <a href="admission"><button type="button" className="application-btn px-3" data-bs-dismiss="modal">Close</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     );
