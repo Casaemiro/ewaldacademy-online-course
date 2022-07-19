@@ -3,3 +3,8 @@
     font-weight: 900;
     color: rgba(0, 39, 0, 0.737);
 }
+.application-btn {
+    padding: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 3px;
+}

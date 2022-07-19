@@ -9,14 +9,23 @@
     border-radius: 5px;
 }
 .cstm {
-        background-color: rgba(0, 0, 0, 0.519);
+        background-color: rgba(0, 0, 0, 0.705);
         border-radius: 5px;
     } 
 @media only screen and (max-width: 796px) {
     .slder img {
         width: 100%;
-    }   
+    }
+    .cstm {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 }
-@media only screen and (max-width: 726px) {
-    
+@media only screen and (max-width: 611px) {
+    .cstm p {
+        font-size: 0.8rem;
+    }
+    .cstm h3 {
+        font-size: 1rem;
+    }
 }
