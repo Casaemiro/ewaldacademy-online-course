@@ -11,6 +11,22 @@
     padding-bottom: 0%;
     margin-top: 5%;
 }
+.mobile-about {
+    background-image: url('../images/DSC_2630.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    font-size: 0.8rem;
+}
+.overlaydm {
+    padding: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    background-color: rgba(0, 0, 0, 0.512);
+}
+
 
 .mission {
     width: 70%;

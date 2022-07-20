@@ -1,6 +1,6 @@
 import slide1 from '../images/DSC_2185.JPG'
 import slide2 from '../images/DSC_2415.JPG'
-import slide3 from '../images/DSC_2203.JPG'
+import slide3 from '../images/team.webp'
 import slide4 from '../images/DSC_2311.JPG'
 import './CourseList.css'
 
@@ -15,7 +15,7 @@ const CourseList = () => {
         </div>
         <div className="courseList px-md-5">
             <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                <div className="card" >
+                <div className="shape card" >
                     <img src={slide1} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title courset">Basic Music theory 1</h5>
@@ -25,7 +25,7 @@ const CourseList = () => {
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                <div className="card">
+                <div className="shape card">
                     <img src={slide2} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title courset">Basic Music theory 2</h5>
@@ -35,7 +35,7 @@ const CourseList = () => {
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                <div className="card">
+                <div className="shape card">
                     <img src={slide3} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title courset">Playing as a team</h5>
@@ -45,7 +45,7 @@ const CourseList = () => {
                 </div>
             </div>
             <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                <div className="card">
+                <div className="shape card">
                     <img src={slide4} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title courset">Sound engineering 101</h5>

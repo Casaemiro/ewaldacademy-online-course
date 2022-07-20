@@ -1,6 +1,6 @@
 import './Admission.css'
 import slide1 from '../images/DSC_2185.JPG'
-import slide2 from '../images/DSC_2415.JPG'
+import slide2 from '../images/speaker.jpg'
 import slide3 from '../images/DSC_2203.JPG'
 import slide4 from '../images/DSC_2311.JPG'
 const Admission = () => {
@@ -14,7 +14,7 @@ const Admission = () => {
             </div>
             <div className="courseList px-md-5">
                 <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                    <div className="card" >
+                    <div className="shape card" >
                         <img src={slide1} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Ewald academy: Batch 6</h5>
@@ -24,7 +24,7 @@ const Admission = () => {
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                    <div className="card">
+                    <div className="shape card">
                         <img src={slide2} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Sound engineering workshop</h5>
@@ -34,7 +34,7 @@ const Admission = () => {
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                    <div className="card">
+                    <div className="shape card">
                         <img src={slide3} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Summer camp</h5>
@@ -44,7 +44,7 @@ const Admission = () => {
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
-                    <div className="card">
+                    <div className="shape card">
                         <img src={slide4} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Master class</h5>
