@@ -28,7 +28,7 @@ const About = () => {
                     </p>
                 </div>
             </div>
-            <div className="aboutus-section ">
+            <div className="aboutus-section " style={{display:"none"}}>
 
                 <div className="about-text seco" style={{ textAlign: "right" }}>
                     <div className="about-head">

@@ -6,7 +6,7 @@
 .team-head {
     font-size: 3rem;
     font-weight: 800;
-    color: rgba(0, 22, 0, 0.851);
+    color: rgba(0, 22, 0, 0.752);
 }
 .team-section {
     padding-top: 5%;
@@ -17,4 +17,10 @@
 }
 .team-role {
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 611px) {
+    .team-head {
+        font-size: 2rem;
+    }
 }
