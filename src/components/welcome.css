@@ -1,0 +1,14 @@
+.service {
+    border: 1px solid rgba(0, 0, 0, 0.203);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+}
+.welcome-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.welcome-text {
+    color: rgba(0, 24, 0, 0.87);
+    padding: 4%;
+}

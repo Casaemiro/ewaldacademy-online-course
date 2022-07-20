@@ -1,0 +1,20 @@
+.staff-name {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: rgba(0, 27, 0, 0.77);
+}
+.team-head {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(0, 22, 0, 0.851);
+}
+.team-section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.team-image {
+    border-radius: 5px;
+}
+.team-role {
+    font-size: 0.9rem;
+}

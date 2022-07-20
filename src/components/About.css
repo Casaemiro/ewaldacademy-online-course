@@ -11,6 +11,7 @@
     padding-bottom: 0%;
     margin-top: 5%;
 }
+
 .mission {
     width: 70%;
     margin: 0% auto;
@@ -20,43 +21,53 @@
     font-size: 0.9rem;
     color: rgba(1, 58, 1, 0.59);
 }
+
 .aboutus-section:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.381);
 }
+
 .about-head {
     font-size: 2.5rem;
     font-weight: 800;
     color: rgba(0, 60, 0, 0.381);
 }
+
 .about-text {
     padding-left: 3%;
     padding-right: 3%;
     text-align: left;
     width: 50%;
 }
+
 .about-text p {
     font-size: 1.4rem;
 }
+
 #aboutus .about-image {
     padding-bottom: 0px;
     width: 50%
 }
+
 .sec {
     width: 50%;
 }
+
 /* .seco p {
     width: 50%;
 } */
 @media only screen and (max-width: 1330px) {
-    #aboutus .about-text p{
-       font-size: 1.1rem;
-    }
-    .seco p {
-    font-size: 1.1rem;
-}
-    .about-text  {
+    #aboutus .about-text p {
         font-size: 1.1rem;
     }
+
+    .seco p {
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+
     .about-head {
         font-size: 1.5rem;
     }
@@ -64,26 +75,38 @@
 
 @media only screen and (max-width: 980px) {
     .aboutus-section {
-        width :750px
+        width: 750px
     }
 }
+
 @media only screen and (max-width: 756px) {
     .aboutus-section {
-        width :95%
+        width: 95%
     }
-    .about-text p{
+
+    .about-text p {
         font-size: 0.8rem;
     }
-    #aboutus .about-text p{
+
+    #aboutus .about-text p {
         font-size: 0.8rem;
-     }
+    }
 }
+
 @media only screen and (max-width: 611px) {
     .aboutus-section {
-        width :95%;
+        width: 95%;
         flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 20%;
+        display: none;
     }
-    .about-text{
+
+    .mobabt {
+        display: none;
+    }
+
+    .about-text {
         /* width: 95%; */
         margin: 0% auto;
         position: absolute;
@@ -93,17 +116,48 @@
         text-align: center;
         border-radius: 5px;
         color: white;
-    }.about-image{
+    }
+
+    .about-image {
         width: 100%;
         top: 0;
+        box-shadow: 0 0 50px 50px white inset;
     }
-    #aboutus .about-image{
+
+    .mobile-about {
+        background-image: url('../images/DSC_2630.JPG');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        color: white;
+        font-size: 0.8rem;
+    }
+    .overlaydm {
+        padding: 2%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        background-color: rgba(0, 0, 0, 0.512);
+    }
+
+
+
+
+    .sec {
+        box-shadow: 0 0 50px 50px white inset;
+    }
+
+    #aboutus .about-image {
         width: 100%;
-     }.seco p{
+        box-shadow: 0 0 50px 50px white inset;
+    }
+
+    .seco p {
         text-align: center;
-     }
-     .about-head {
-         color: white;
-         text-align: center;
-     }
+    }
+
+    .about-head {
+        color: white;
+        text-align: center;
+    }
 }
