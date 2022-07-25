@@ -1,5 +1,5 @@
 .service {
-    border: 1px solid rgba(0, 0, 0, 0.203);
+    /* border: 1px solid rgba(0, 0, 0, 0.103); */
     border-radius: 10px;
     padding: 2%;
     margin: 1%;
@@ -12,4 +12,7 @@
 .welcome-text {
     color: rgba(0, 24, 0, 0.87);
     padding: 4%;
+}
+.sect-bt {
+    background-color: rgba(255, 200, 0, 0.156);
 }

@@ -9,12 +9,15 @@ import MusicBasics from './Pages/MusicBasics';
 import Admission from './Pages/Admission';
 import CourseList from './Pages/CourseList';
 import ContactusPage from './Pages/ContactusPage';
+import Events from './Pages/Events';
+import SociaPop from './components/socialpop';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <SociaPop />
         <Routes>
         <Route index element={<HomePage/>}/>
         <Route path="/contactus" element={<ContactusPage />}/>
@@ -22,6 +25,7 @@ function App() {
         <Route path='/musiccourse' element={<MusicBasics/>}/>
         <Route path='/admission' element={<Admission />} />
         <Route path='/courselist' element={<CourseList />} />
+        <Route path='/events' element={<Events />} />
         </Routes>
 
         <Contactus />

@@ -4,32 +4,50 @@
     padding-top: 10%;
     align-items: center;
     padding-bottom: 10%;
-background-color: rgba(0, 128, 0, 0.103);
-margin: 3%;
-border-radius: 50px;
+background-color: rgba(0, 0, 0, 0.603);
+/* margin: 3%; */
+/* border-radius: 50px; */
     /* padding-bottom: 20%; */
 }
+.howto-image {
+    background-image: url('../images/speaker.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .howto-section-header {
-    font-size: 3rem;
+    font-size: 2.3rem;
     padding-bottom: 5%;
     font-weight: 800;
-    color: rgba(1, 47, 1, 0.615);
+    /* color: rgba(1, 47, 1, 0.615); */
+    color: white;
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0% auto;
 }
 .howto-steps {
     text-align: left;
     font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.57);
+    /* color: rgba(0, 0, 0, 0.57); */
+    color: white;
     margin-top: 1%;
     /* background-color: green; */
     width: 600px;
 }
+@media only screen and (max-width:750px) {
+    .howto-steps {
+        font-size: 0.9rem;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0% auto;
+    }
+}
 @media only screen and (max-width: 625px) {
     .howto-section-header {
         font-size: 1.6rem;
-        width: 80%;
+        width: 90%;
         margin: 0% auto;
         margin-bottom: 5%;
     }
@@ -45,5 +63,8 @@ border-radius: 50px;
     .howto-steps {
         font-size: 0.8rem;
         width: 90%;
+    }
+    .howto-section-header {
+        font-size: 1.2rem;
     }
 }

@@ -13,6 +13,12 @@ const Navbar = () => {
         // document.querySelector('.events').style.margin = "0px auto"
         console.log("wow")
     }
+    const showFunc =()=>{
+        document.querySelector('.social-sec').style.display ="flex"
+        document.querySelector('.scio').style.alignItems = "center"
+        document.querySelector('.mobileMenu').style.display="none";
+        setMenu(true)
+    }
     return (
         <div className="top-nav">
             <div className="nav-left">
@@ -31,7 +37,7 @@ const Navbar = () => {
                 <a href="admission">Admissions</a>
                 <a href="courselist">Courses</a>
                 <a href="/">Sponsor</a>
-                <a href="/">Events</a>
+                <a href="/events">Events</a>
 
                 {/* <select className='evt'>
                     <option>Events</option>
@@ -43,12 +49,7 @@ const Navbar = () => {
                 </select> */}
                 <a href="/Abt">About</a>
                 <a href="contactus">Contact us</a>
-                <select className='evt'>
-                    <option>Social</option>
-                    <option>Facebook</option>
-                    <option>Instagram</option>
-                    <option>Youtube</option>
-                </select>
+                <span href="/" onClick={showFunc}>Social</span>
             </div>
             <div className='mobileMenu'>
             <a href="/" style={{ marginLeft:"1rem"}}><i className="fa-solid fa-magnifying-glass newSearch"></i></a>
@@ -56,24 +57,10 @@ const Navbar = () => {
                 <a href="/courselist" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</a>
                 <a href="/" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Sponsor</a>
 
-                {/* <select className='evt'>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Events</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Holiday music Camps</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Yearly music session(3mo)</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Sound engineering training</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Music workshops</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none"}}>Master class</option>
-                </select> */}
-
-                <a href="/" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Events</a>
+                <a href="/events" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Events</a>
                 <a href="/Abt" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>About</a>
                 <a href="/contactus" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Contact us</a>
-                <select className='evt'>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Social</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Facebook</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Instagram</option>
-                    <option onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Youtube</option>
-                </select>
+                <span onClick={showFunc}>Social</span>
             </div>
             <div className='menuIcon' onClick={()=>{if(menu){document.querySelector('.mobileMenu').style.display="flex"; setMenu(false)};if(!menu){document.querySelector('.mobileMenu').style.display="none"; setMenu(true)};}}><i className="fa-solid fa-bars" ></i></div>
         </div>
