@@ -18,6 +18,7 @@ import DiminishedChords from '../MusicCourseModules/diminishedChords';
 import ChordInversion from '../MusicCourseModules/chordInversions';
 import DiatonicChords from '../MusicCourseModules/diatonicChords';
 import React from 'react';
+import Intervals from '../MusicCourseModules/intervals';
 
 const Course = () => {
     const [menu, setMenu] = React.useState("true")
@@ -67,6 +68,7 @@ const Course = () => {
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule('.the-piano') }}>The piano</div>
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule('.whiteKeys') }}>Naming of white keys</div>
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule(".blackKeys") }}>Naming of black keys</div>
+                    <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule(".intervals") }}>Intervals</div>
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule(".scales") }}>Scales</div>
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule('.fingerChart') }}>Fingering Charts</div>
                     <div className="course-module" onClick={(e) => { leftTabFunctionality(e); displayModule('.majorScale-section') }}>The major scale</div>
@@ -89,6 +91,7 @@ const Course = () => {
                             <div className="course-module" onClick={() => { setTop("The piano"); displayModule('.the-piano') }}>The piano</div>
                             <div className="course-module" onClick={() => { setTop("Naming of white keys"); displayModule('.whiteKeys') }}>Naming of white keys</div>
                             <div className="course-module" onClick={() => { setTop("Naming of black keys"); displayModule(".blackKeys") }}>Naming of black keys</div>
+                            <div className="course-module" onClick={() => { setTop("Intervals"); displayModule(".intervals") }}>Intervals</div>
                             <div className="course-module" onClick={() => { setTop("Scales"); displayModule(".scales") }}>Scales</div>
                             <div className="course-module" onClick={() => { setTop("Fingering Charts"); displayModule('.fingerChart') }}>Fingering Charts</div>
                             <div className="course-module" onClick={() => { setTop("The major scale"); displayModule('.majorScale-section') }}>The major scale</div>
@@ -110,6 +113,7 @@ const Course = () => {
                     <ThePiano />
                     <NamingWhiteKeys />
                     <NamingBlackKeys />
+                    <Intervals />
                     <Scales />
                     <FingeringChart />
                     <MajorScale />
