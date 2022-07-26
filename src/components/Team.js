@@ -1,7 +1,8 @@
 import './Team.css'
-import slide1 from '../images/DSC_2185.JPG'
+import slide1 from '../images/Nelson.JPG'
 import slide2 from '../images/DSC_2415.JPG'
 import slide3 from '../images/DSC_2203.JPG'
+import silas from '../images/silas.JPG'
 import slide4 from '../images/DSC_2311.JPG'
 
 
@@ -9,9 +10,9 @@ const Team = () => {
     return (
         <div className="team-section px-3 ">
         <div className="team-head">
-            Staff
+            STAFF
         </div>
-            <div class="row w-80" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+            <div className="row w-80" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
                 <div className="col-md-2 p-2 col-5 col-sm-3" >
                     <img src={slide1} className="card-img-top team-image" alt="..." />
                     <div className="card-body team-role">
@@ -36,17 +37,17 @@ const Team = () => {
                 <div className=" col-md-2 p-2  col-5 col-sm-3" >
                     <img src={slide4} className="card-img-top team-image" alt="..." />
                     <div className="card-body team-role">
-                        <h5 className="card-title staff-name">Harry Kesseng</h5>
+                        <h5 className="card-title staff-name">Harry.K</h5>
                         <p className="card-text faint">Studio director.(Electrical engr, Bassist)</p>
                     </div>
                 </div>
             </div>
-            <div class="row w-80" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+            <div className="row w-80" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
                 <div className="col-md-2 p-2 col-5 col-sm-3" >
-                    <img src={slide1} className="card-img-top team-image" alt="..." />
+                    <img src={silas} className="card-img-top team-image" alt="..." />
                     <div className="card-body team-role">
                         <h5 className="card-title staff-name">Akoneh Silas</h5>
-                        <p className="card-text faint">Diretor of Academy (Software engr. Iknitespace, Pianist).</p>
+                        <p className="card-text faint">Diretor of Academy (Software engr. Iknitespace, Aux Pianist).</p>
                     </div>
                 </div>
                 <div className="col-md-2 p-2 col-5  col-sm-3" >

@@ -1,7 +1,7 @@
 import './Admission.css'
 import slide1 from '../images/DSC_2185.JPG'
 import slide2 from '../images/speaker.jpg'
-import slide3 from '../images/DSC_2203.JPG'
+import slide3 from '../images/camp.jpg'
 import slide4 from '../images/DSC_2311.JPG'
 const Admission = () => {
     return (
@@ -13,43 +13,43 @@ const Admission = () => {
                 </p>
             </div>
             <div className="courseList px-md-5">
-                <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
+                <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                     <div className="shape card" >
                         <img src={slide1} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Ewald academy: Batch 6</h5>
                             <p className="card-text faint">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
+                            <a href="/" className="btn btn-warning card-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
+                <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                     <div className="shape card">
                         <img src={slide2} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Sound engineering workshop</h5>
                             <p className="card-text faint">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
+                            <a href="/" className="btn btn-warning card-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
+                <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                     <div className="shape card">
                         <img src={slide3} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Summer camp</h5>
                             <p className="card-text faint">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
+                            <a href="/" className="btn btn-warning card-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
+                <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2">
                     <div className="shape card">
                         <img src={slide4} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title courset">Master class</h5>
                             <p className="card-text faint">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="/" className="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
+                            <a href="/" className="btn btn-warning card-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Admission = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body ">
-
+                        <div className="overwhite">
 
                         {/* ________________________________________________________________________ */}
                             <div className="form-floating mb-3 col-12">
@@ -90,7 +90,7 @@ const Admission = () => {
                             </div>
                             
                                 <textarea type="number"  className="form-control form-floating col-12" id="floatingPassword" placeholder="How will this training be of help to you?" required></textarea>
-                            
+                            </div>
                             {/* ___________________________________________________________________________ */}
                         </div>
                         <div className="modal-footer bg-warning">
@@ -118,9 +118,9 @@ const Admission = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body ">
-
+                        <div className="overwhite">
                         Application sent successfully. We will process your application and get back to you as soon as possible. Thanks for choosing us.
-                       
+                       </div>
                         </div>
                         <div className="modal-footer bg-warning">
                             <a href="admission"><button type="button" className="application-btn px-3" data-bs-dismiss="modal">Close</button></a>
