@@ -3,7 +3,7 @@ import './Started.css'
 const Started = () => {
     return ( 
         <div className="strt-section">
-            <p className="intro-text"><b>Hello!</b> Welcome to this course.We are honored that you chose to learn from us. Here, we will teach you everything you need to know before calling yourself a musician. You will be guided through each level at your pace. Extra study material will also be provied as need arises. You also have access to our very talented and <b>experienced</b> team of musicians for any questions/doubts.<br/><br/>This course is designed to be very simple and concise and each module is a prerequisite for the next module so even though the material is <b>comprehensive</b> enough, make sure you understand each module before moving to the next. This is to ensure optimal usage of the resources. This section is meant to prepare you for the lessons ahead, making sure that you have all you need for a smooth experience.</p>
+            <p className="intro-text"><b>Hello!</b> Welcome to this course.We are honored that you chose to learn from us. Here, we will teach you everything you need to know before calling yourself a musician. This section is meant to prepare you for the lessons ahead, making sure that you have all you need for a smooth experience. You will be guided through each level at your pace. Extra study material will also be provied as need arises. You also have access to our very talented and <b>experienced</b> team of musicians for any questions/doubts.<br/><br/>This course is designed to be very simple and concise and each module is a prerequisite for the next module so even though the material is <b>comprehensive</b> enough, make sure you understand each module before moving to the next. This is to ensure optimal usage of the resources.</p>
             <div className='intro-img'>
                 <img src={''} alt=""/>
             </div>
@@ -15,7 +15,7 @@ const Started = () => {
                 <li>Study everyday (<b>Consistency is key</b>).</li>
                 <li>Most lessons will be accompanied by some hands on excercises. Do well to practice along.</li>
             </ul>
-            <p className="intro-text">Your honest comments will be very much appreciated</p>
+            <p className="intro-text">Your honest comments will be very much appreciated.</p>
             
         </div>
      );
