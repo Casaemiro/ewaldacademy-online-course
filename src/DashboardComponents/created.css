@@ -1,0 +1,17 @@
+.created {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: cente; */
+    border-radius: 2px;
+    background-color: rgba(0, 110, 255, 0.159);
+
+
+}
+.round {
+    border-radius: 3px;
+}
+.nameEvt {
+    font-weight: 600;
+    text-align: left;
+    padding-left: 2%;
+}

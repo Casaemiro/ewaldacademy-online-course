@@ -11,6 +11,7 @@ import CourseList from './Pages/CourseList';
 import ContactusPage from './Pages/ContactusPage';
 import Events from './Pages/Events';
 import SociaPop from './components/socialpop';
+import Dashboard from './Pages/dashboard';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/admission' element={<Admission />} />
         <Route path='/courselist' element={<CourseList />} />
         <Route path='/events' element={<Events />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
 
         <Contactus />

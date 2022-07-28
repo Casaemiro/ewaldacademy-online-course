@@ -1,0 +1,37 @@
+.dash-events
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.dashcreatedevents {
+    border-top-left-radius: 5px;
+    border-top: 1px solid rgba(0, 128, 0, 0.597);
+    border-left: 1px solid rgba(0, 128, 0, 0.597);
+    border-bottom: 1px solid rgba(0, 128, 0, 0.597);
+}
+.dashcreateevents {
+    border: 1px solid rgba(0, 128, 0, 0.597);
+    border-top-right-radius: 5px;
+}
+.createdEvents {
+    color:green;
+    font-weight: 800;
+    padding: 2%;
+}
+.create-btn {
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 128, 0, 0.766);
+}
+.create-btn:hover {
+    background-color: rgba(0, 128, 0, 0.423);
+}
+#headgreen {
+    color: green;
+}
+#headgreen:hover {
+    color: rgb(2, 194, 2);
+}

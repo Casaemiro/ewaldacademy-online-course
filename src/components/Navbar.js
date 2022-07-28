@@ -36,7 +36,6 @@ const Navbar = () => {
                 <a href="/"><i className="fa-solid fa-magnifying-glass newSearch" style={{paddingRight:"2%"}}></i></a>
                 <a href="admission">Admissions</a>
                 <a href="courselist">Courses</a>
-                <a href="/">Sponsor</a>
                 <a href="/events">Events</a>
 
                 {/* <select className='evt'>
@@ -49,6 +48,7 @@ const Navbar = () => {
                 </select> */}
                 <a href="/Abt">About</a>
                 <a href="contactus">Contact us</a>
+                <a href="/dashboard">Admin</a>
                 <span href="/" onClick={showFunc}>Social</span>
             </div>
             <div className='mobileMenu'>

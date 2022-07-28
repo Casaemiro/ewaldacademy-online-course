@@ -1,0 +1,28 @@
+.dashnav-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    /* background-color: red; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.271);
+}
+.dashnav-section span{
+    padding: 1%;
+
+    color: rgba(0, 0, 0, 0.547);
+    text-decoration: none;
+}
+
+.dashnav-section span:hover{
+    color: rgba(0, 0, 0, 0.885);
+}
+.dashlink {
+    cursor: pointer;
+}
+#inv {
+    display: none;
+}
+#vis {
+    display: flex;
+}
