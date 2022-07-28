@@ -3,7 +3,7 @@ import './categorystyle.css'
 const ClassificationOfMusicalInstruments = () => {
     return (
         <div className="category">
-            <p className="intro-text">In the previous lesson we learned about what musical instruments are. There are tonnes of different types of musical instruments that exist in different cultures and different genres. The different instruments produce different sounds because they have different mechanisms of functionality. Musical instruments are classified based on how they produce thier sound. Generally, we have 4 categories: <span className='extra-link'>Woodwind</span>, <span className='extra-link'>Brass</span>, <span className='extra-link'>Percussive</span> and <span className='extra-link'>Stringed</span> instruments.</p>
+            <p className="intro-text">In the previous lesson we learned about what musical instruments are. There are tonnes of different types of musical instruments that exist in different cultures and different genres. The different instruments produce different sounds because they have different mechanisms of functionality. Musical instruments can be divided into different groups based on how they produce thier sound. Generally, we have 4 categories: <span className='extra-link'>Woodwind</span>, <span className='extra-link'>Brass</span>, <span className='extra-link'>Percussive</span> and <span className='extra-link'>Stringed</span> instruments.</p>
             <div className='intro-img'>
                 <img src='' alt="" />
             </div>

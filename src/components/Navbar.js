@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div> */}
                 <a href="/"><img src={logo} alt="" className="lgo"/></a>
             </div>
-            <div className="middlemobile"><b>EwaldMusic</b></div>
+            <div className="middlemobile"><b><a href="/">EwaldMusic</a></b></div>
             <form className="top-nav-area">
                 <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} />
 
