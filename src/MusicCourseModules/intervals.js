@@ -18,6 +18,7 @@ const Intervals = () => {
             </p>
             <p className='intro-text row'>
                 <span className='p-3'><span className='extra-link'>Octave</span> A semitone is the interval between any two notes that are adjesent. (No notes seperating them)</span><br/><img src={c} alt="" className='col-md-8'/>
+                <span className='p-3'>In the next section, we'll look at scales and how intervals can be used to form scales.</span>
             </p>
         </div>
     );

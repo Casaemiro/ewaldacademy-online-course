@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div> */}
                 <a href="/"><img src={logo} alt="" className="lgo"/></a>
             </div>
-            <div className="middlemobile"><b>EwaldMusic</b></div>
+            <div className="middlemobile"><b><a href="/">EwaldMusic</a></b></div>
             <form className="top-nav-area">
                 <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} />
 
@@ -36,7 +36,6 @@ const Navbar = () => {
                 <a href="/"><i className="fa-solid fa-magnifying-glass newSearch" style={{paddingRight:"2%"}}></i></a>
                 <a href="admission">Admissions</a>
                 <a href="courselist">Courses</a>
-                <a href="/">Sponsor</a>
                 <a href="/events">Events</a>
 
                 {/* <select className='evt'>
@@ -49,6 +48,7 @@ const Navbar = () => {
                 </select> */}
                 <a href="/Abt">About</a>
                 <a href="contactus">Contact us</a>
+                <a href="/dashboard">Admin</a>
                 <span href="/" onClick={showFunc}>Social</span>
             </div>
             <div className='mobileMenu'>
