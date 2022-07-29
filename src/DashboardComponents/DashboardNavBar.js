@@ -4,15 +4,15 @@ const DashNav = () => {
     const changeNavLink =(e)=> {
         document.querySelector("#headgreen").removeAttribute("id","headgreen")
         e.target.setAttribute("id","headgreen")
-        if(e.target.innerHTML =="Posts"){
+        if(e.target.innerHTML ==="Posts"){
             document.querySelector("#vis").setAttribute("id","inv")
             document.querySelector(".dash-events").setAttribute("id","vis")
         }
-        if(e.target.innerHTML =="Courses"){
+        if(e.target.innerHTML ==="Courses"){
             document.querySelector("#vis").setAttribute("id","inv")
             document.querySelector(".dash-events").setAttribute("id","vis")
         }
-        if(e.target.innerHTML =="Programs"){
+        if(e.target.innerHTML ==="Programs"){
             document.querySelector("#vis").setAttribute("id","inv")
             document.querySelector(".program").setAttribute("id","vis")
         }
