@@ -35,3 +35,19 @@
 #headgreen:hover {
     color: rgb(2, 194, 2);
 }
+@media only screen and (max-width: 780px) {
+    .dash-events {
+        /* background-color: black; */
+        flex-direction: column;margin: 1%;
+    }
+    .dashcreatedevents {
+        border-right: 1px solid green;
+        border-radius: 3px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+    .dashcreateevents {
+        border-radius: 3px;
+        margin-bottom: 5%;
+    }
+}

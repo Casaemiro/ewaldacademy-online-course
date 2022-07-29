@@ -4,13 +4,13 @@ import Created from './created';
 const Program = () => {
     return ( 
         <div className="program">
-            <div className='dashcreatedevents col-4'>
+            <div className='dashcreatedevents col-md-4'>
                 <div className='createdEvents'>Trainings</div>
                 <Created />
                 <Created />
                 <Created />
             </div>
-            <div className='dashcreateevents col-6 p-md-5 p-sm-3 p-1' >
+            <div className='dashcreateevents col-md-6 p-md-5 p-sm-3 p-1' >
                 <div className='createdEvents pb-5'>Add training</div>
                 <div className="form-floating mb-3">
                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
