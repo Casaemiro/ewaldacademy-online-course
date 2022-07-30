@@ -1,5 +1,4 @@
-// import slide1 from '../images/DSC_2185.JPG'
-import slide2 from '../images/DSC_2415.JPG'
+
 import './Events.css'
 const Events = ({ post }) => {
 
@@ -27,7 +26,7 @@ const Events = ({ post }) => {
                             <div className="card-body">
                                 {/* <h5 className="card-title courset">Coming soon: DWK2022</h5> */}
                                 <p className="card-text faint">{evt.description}</p>
-                                <a href="/"><i className="fa-solid fa-thumbs-up fa-2x"></i></a>  <a href="/" style={{ marginLeft: "2%" }}><i className="fa-solid fa-share-nodes fa-2x "></i></a>
+                                <a href="/"><i className="fa-solid fa-thumbs-up fa-2x"></i></a>  <a href="whatsapp://send?text=<<HERE GOES THE URL ENCODED TEXT YOU WANT TO SHARE>>" data-action="share/whatsapp/share" style={{ marginLeft: "2%" }}><i className="fa-solid fa-share-nodes fa-2x "></i></a>
                             </div>
                         </div>
                     </div>
