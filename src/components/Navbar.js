@@ -55,7 +55,7 @@ const Navbar = () => {
             <a href="/" style={{ marginLeft:"1rem"}}><i className="fa-solid fa-magnifying-glass newSearch"></i></a>
                 <a href="admission" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Admissions</a>
                 <a href="/courselist" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Courses</a>
-                <a href="/" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Sponsor</a>
+                <a href="/dashboard" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Admin</a>
 
                 <a href="/events" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>Events</a>
                 <a href="/Abt" onClick={()=>{document.querySelector('.mobileMenu').style.display="none";setMenu(true)}} style={{paddingLeft:"1rem"}}>About</a>
