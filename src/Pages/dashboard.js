@@ -3,11 +3,11 @@ import DashEvents from '../DashboardComponents/DashEvents';
 import Program from '../DashboardComponents/DashProgram';
 import './dashboard.css'
 
-const Dashboard = () => {
+const Dashboard = ({collec}) => {
     return ( 
         <div className="dashboard-section">
             <DashNav />
-            <DashEvents />
+            <DashEvents colec= {collec}/>
             <Program />
         </div>
      );

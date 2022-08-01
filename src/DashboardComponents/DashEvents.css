@@ -5,12 +5,14 @@
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
+    
 }
 .dashcreatedevents {
     border-top-left-radius: 5px;
     border-top: 1px solid rgba(0, 128, 0, 0.597);
     border-left: 1px solid rgba(0, 128, 0, 0.597);
     border-bottom: 1px solid rgba(0, 128, 0, 0.597);
+    background-color: rgba(0, 128, 0, 0.297);
 }
 .dashcreateevents {
     border: 1px solid rgba(0, 128, 0, 0.597);
@@ -31,6 +33,8 @@
 }
 #headgreen {
     color: green;
+    background-color: gold;
+    border-radius: 5px;
 }
 #headgreen:hover {
     color: rgb(2, 194, 2);
