@@ -7,6 +7,7 @@
     margin-bottom: 5%;
     
 }
+
 .dashcreatedevents {
     border-top-left-radius: 5px;
     border-top: 1px solid rgba(0, 128, 0, 0.597);
@@ -26,6 +27,12 @@
 .create-btn {
     border: none;
     border-radius: 3px;
+    background-color: rgba(0, 128, 0, 0.766);
+}
+.edit-btn {
+    border: none;
+    border-radius: 3px;
+    display: none;
     background-color: rgba(0, 128, 0, 0.766);
 }
 .create-btn:hover {

@@ -19,10 +19,10 @@ function App() {
   
   
   const [posts, setPosts] = useState([
-    { Caption: "", description: "", hashtag: "" }
+    { Caption: "", description: "", hashtag: "", id:0 }
   ])
   const [program, setProgram] = useState([
-    { name: "", description: "", cost: 0 }
+    { name: "", description: "", cost: 0, id:0 }
   ])
   // const [courses, setCourses] = useState([
     //   { name: ""}
@@ -41,8 +41,8 @@ function App() {
       // const data3 = await getDocs(coursesCollectionRef);
       // console.log("data3", data3)
 
-      setProgram(data2.docs.map((post) => ({ ...post.data() })))
-      setPosts(data.docs.map((post) => ({ ...post.data() })))
+      setProgram(data2.docs.map((post) => ({ ...post.data(), id:post.id })))
+      setPosts(data.docs.map((post) => ({ ...post.data(), id:post.id })))
       // setCourses(data3.docs.map((post) => ({ ...post.data() })))
 
 
@@ -51,7 +51,7 @@ function App() {
 
   }, [])
 
-  // console.log(posts)
+  console.log(program)
   // console.log(program)
   // console.log(courses)
 
@@ -70,7 +70,7 @@ function App() {
           <Route path='/admission' element={<Admission programs = {program}/>} />
           <Route path='/courselist' element={<CourseList />} />
           <Route path='/events' element={<Events post={posts} />} />
-          <Route path='/dashboard' element={<Dashboard collec = {postsCollectionRef}/>} />
+          <Route path='/dashboard' element={<Dashboard collec = {postsCollectionRef} postlist={posts} programs = {programCollectionRef} programlist={program}/>} />
         </Routes>
 
         <Contactus />

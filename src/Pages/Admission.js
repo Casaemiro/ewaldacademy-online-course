@@ -5,7 +5,7 @@ import './Admission.css'
 // import slide4 from '../images/DSC_2311.JPG'
 const Admission = ({ programs }) => {
     console.log(programs)
-    let id = 1;
+   
     return (
         <div className="admission">
             <div className='qualityinfo'>
@@ -19,12 +19,12 @@ const Admission = ({ programs }) => {
                 {programs.map((evt) => {
 
                     return (
-                        <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2" key={id++}>
+                        <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2" key={evt.id}>
                             <div className="shape card" >
                                 <img src={evt.url} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title courset">{evt.name}</h5>
-                                    <p className="card-text faint"> {evt.description} </p>
+                                    <p className="card-text faint"> {evt.description} <br/><span style={{color:"green", fontSize:"0.7rem",displat:"block"}}>Fee: <i>{evt.cost + "FCFA"} </i></span></p>
                                     <a href="/" className="btn btn-warning card-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply now</a>
                                 </div>
                             </div>
