@@ -27,15 +27,18 @@ const DashEvents = ({ colec, postlist }) => {
             })
         })
     }
-    
+
     const deleteProgram = async (id) => {
         const userPost = doc(db, "posts", id)
         await deleteDoc(userPost).then(console.log('Deleted'))
     }
-    const update = { Caption: name, description: description, hashtag: hashtag, likes: 0, url: imageURL }
+    
+    const update = { Caption: name, description: description, hashtag: hashtag, url: imageURL }
     const editEvent = async (id) => {
         const userPost = doc(db, "posts", id)
-        await updateDoc(userPost, update).then("Update complete").then(console.log("Updated"))
+        await updateDoc(userPost, update).then(console.log("Updated"))
+        document.querySelector(".create-btn").style.display = "flex"
+        document.querySelector(".edit-btn").style.display = "none"
     }
     return (
         <div className="dash-events" id='vis'>
@@ -52,6 +55,12 @@ const DashEvents = ({ colec, postlist }) => {
                                     document.querySelector(".create-btn").style.display = "none"
                                     document.querySelector(".edit-btn").style.display = "flex"
                                     setUpdateId(post.id)
+                                    setImageURL(post.url)
+                                    setName(post.Caption)
+                                    setHashtag(post.hashtag)
+                                    setDescription(post.description)
+                                    console.log(post.url)
+                                    console.log(post.hashtag)
 
                                 }}>edit</div></span>
                             </div>
