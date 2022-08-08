@@ -51,7 +51,7 @@ function App() {
 
   }, [])
 
-  console.log(program)
+  console.log("posts", posts)
   // console.log(program)
   // console.log(courses)
 

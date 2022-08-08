@@ -10,7 +10,7 @@ const DashNav = () => {
         }
         if(e.target.innerHTML ==="Courses"){
             document.querySelector("#vis").setAttribute("id","inv")
-            document.querySelector(".dash-events").setAttribute("id","vis")
+            document.querySelector(".dashcourse").setAttribute("id","vis")
         }
         if(e.target.innerHTML ==="Programs"){
             document.querySelector("#vis").setAttribute("id","inv")

@@ -2,12 +2,12 @@ import './DashProgram.css'
 import { useState } from 'react';
 import { storage } from '../firebaseconfig';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { addDoc, doc, deleteDoc, updateDoc } from 'firebase/firestore'
+import { doc, deleteDoc, updateDoc } from 'firebase/firestore'
 import { db } from '../firebaseconfig';
 import './created.css'
+import './dashcourse.css'
 
-const Program = ({ programs, programlist }) => {
-
+const DashCourse = ({courselist}) => {
     const [imageUpload, setImageUpload] = useState(null)
     // const [imageURL, setImageURL] = useState("")
     const [name, setName] = useState("")
@@ -25,8 +25,8 @@ const Program = ({ programs, programlist }) => {
                 console.log(name)
                 console.log(description)
                 console.log(price)
-                console.log(programs)
-                addDoc(programs, { name: name, description: description, cost: price, likes: 0, url: url })
+                // console.log(programs)
+                // addDoc(programs, { name: name, description: description, cost: price, likes: 0, url: url })
             }).then(() => { })
         })
     }
@@ -43,12 +43,18 @@ const Program = ({ programs, programlist }) => {
         document.querySelector(".wow").style.display = "flex"
         document.querySelector(".nop").style.display = "none"
     }
-    return (
-        <div className="program">
+    return ( 
+        <div className="dashcourse">
             <div className='dashcreatedevents col-md-4'>
-                <div className='createdEvents'>Trainings</div>
+                <div className='createdEvents'>Courses</div>
+                <div className="m-2">
+                    <select className='w-100 p-2 '>
+                        <option>Select course</option>
+                    </select>
+                </div>
+                <div><b>Modules</b></div>
                 {
-                    programlist.map((prog) => {
+                    courselist.map((prog) => {
                         return (
                             <div className="created m-2 p-2" key={prog.id}>
                                 <div className="nameEvt col-5">{prog.name}</div>
@@ -71,22 +77,19 @@ const Program = ({ programs, programlist }) => {
 
             </div>
             <div className='dashcreateevents col-md-6 p-md-5 p-sm-3 p-1' >
-                <div className='createdEvents pb-5'>Add training</div>
+                <div className='createdEvents pb-5'>Add Modules</div>
                 <div className="form-floating mb-3">
                     <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" onChange={(e) => { setName(e.target.value) }} />
-                    <label htmlFor="floatingInput">Name of program</label>
+                    <label htmlFor="floatingInput">Name of module</label>
                 </div>
+                <textarea className=" mb-3 w-100 p-1" placeholder='Introduction...'/>
                 <div className="mb-3">
-                    <label htmlFor="formFile" className="form-label">Upload cover Image</label>
+                    <label htmlFor="formFile" className="form-label">Upload module video</label>
                     <input className="form-control" type="file" id="formFile" onChange={(event) => { setImageUpload(event.target.files[0]) }} />
                 </div>
-                <div className="form-floating mb-3">
-                    <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" onChange={(e) => { setDescription(e.target.value) }} />
-                    <label htmlFor="floatingInput">Description</label>
-                </div>
-                <div className="form-floating mb-3">
-                    <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" onChange={(e) => { setPrice(e.target.value) }} />
-                    <label htmlFor="floatingInput">Price</label>
+                <div className="w-100">
+                    <button className="mx-1 px-4" style={{border:"none", borderRadius:"3px"}}>Text</button>
+                    <button className="mx-1 px-4" style={{border:"none", borderRadius:"3px"}}>Image</button>
                 </div>
                 <div className="form-floating">
                     <button className='px-5 mt-3 create-btn wow' onClick={uploadImage}>Create</button>
@@ -95,7 +98,7 @@ const Program = ({ programs, programlist }) => {
 
             </div>
         </div>
-    );
+     );
 }
-
-export default Program;
+ 
+export default DashCourse;
