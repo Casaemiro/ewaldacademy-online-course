@@ -16,14 +16,13 @@ import { useState, useEffect } from 'react';
 import { db } from './firebaseconfig'
 import { collection, getDocs } from 'firebase/firestore'
 function App() {
-  
-  
   const [posts, setPosts] = useState([
     { Caption: "", description: "", hashtag: "", id:0 }
   ])
   const [program, setProgram] = useState([
     { name: "", description: "", cost: 0, id:0 }
   ])
+  const [courses, setCourses] = useState("")
   // const [courses, setCourses] = useState([
     //   { name: ""}
     // ])
@@ -32,26 +31,29 @@ function App() {
   const postsCollectionRef = collection(db, 'posts')
   
   const programCollectionRef = collection(db, 'programs')
-  // const coursesCollectionRef = collection(db, 'courses')
+  
+  const coursesCollectionRef = collection(db, 'courses')
   useEffect(() => {
-
+  
     const getPosts = async () => {
       const data = await getDocs(postsCollectionRef);
       const data2 = await getDocs(programCollectionRef);
-      // const data3 = await getDocs(coursesCollectionRef);
+      const data3 = await getDocs(coursesCollectionRef);
       // console.log("data3", data3)
-
+  
       setProgram(data2.docs.map((post) => ({ ...post.data(), id:post.id })))
       setPosts(data.docs.map((post) => ({ ...post.data(), id:post.id })))
-      // setCourses(data3.docs.map((post) => ({ ...post.data() })))
-
-
+      setCourses(data3.docs.map((post) => ({ ...post.data(), id:post.id  })))
+  
+  
     }
     getPosts()
-
+  
   }, [])
+  
+  
 
-  console.log("posts", posts)
+  // console.log("posts", posts)
   // console.log(program)
   // console.log(courses)
 
@@ -68,9 +70,9 @@ function App() {
           <Route path='/Abt' element={<AboutPage />} />
           <Route path='/musiccourse' element={<MusicBasics />} />
           <Route path='/admission' element={<Admission programs = {program}/>} />
-          <Route path='/courselist' element={<CourseList />} />
+          <Route path='/courselist' element={courses && <CourseList courses = {courses} />} />
           <Route path='/events' element={<Events post={posts} />} />
-          <Route path='/dashboard' element={<Dashboard collec = {postsCollectionRef} postlist={posts} programs = {programCollectionRef} programlist={program}/>} />
+          <Route path='/dashboard' element={<Dashboard coursesCollectionRef={coursesCollectionRef} courses = {courses} collec = {postsCollectionRef} postlist={posts} programs = {programCollectionRef} programlist={program}/>} />
         </Routes>
 
         <Contactus />
