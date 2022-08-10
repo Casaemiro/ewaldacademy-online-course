@@ -3,10 +3,24 @@ import slide2 from '../images/piano1.jpg'
 import slide3 from '../images/team.webp'
 import slide4 from '../images/sound1.jpg'
 import './CourseList.css'
+import MusicBasics from './MusicBasicsNew'
+import {useState} from 'react'
 
-const CourseList = () => {
+export let a = 3
+
+const CourseList = ({ courses }) => {
+
+    console.log("courseses", courses);
+    const [course, setCourse] = useState("")
+    const newCourseList = []
+    
+    // setNewCourseList(temp)
+    console.log(newCourseList);
+
     return (
-        <>
+        <div className='list-of-courses'>
+            {course && <MusicBasics course={course} />}
+
             <div className='qualityinfo'>
                 <p className="qualityinfo-topic">Courses</p>
                 <p>
@@ -54,6 +68,53 @@ const CourseList = () => {
                         </div>
                     </div>
                 </div>
+                {
+
+
+
+
+
+
+
+
+                    //__________________________________________________________________________________________________________________
+                    courses.map((elem) => {
+                        if(newCourseList.includes(elem.course)){
+                            return ""
+                        }
+                        newCourseList.push(elem.course)
+                        console.log(newCourseList)
+                        return (
+                            <div className="col-md-4 col-lg-3 col-sm-4 col-6 p-2" key={elem.id} >
+                                <div className="shape card">
+                                    <img src={elem.img} className="card-img-top" alt="EwaldMusic" />
+                                    <div className="card-body">
+                                        <h5 className="card-title courset">{elem.course}</h5>
+                                        <p className="card-text faint">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <div href="#" className="btn btn-warning card-btn" onClick={() => {
+                                            // document.querySelector('.list-of-courses').style.display = "none"
+                                            document.querySelector('.courseList').style.display = "none"
+                                            document.querySelector('.qualityinfo').style.display = "none"
+                                            let temp = courses.filter((elt)=>{return elt.course === elem.course})
+                                            setCourse(temp)
+
+                                        }} >Register</div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })
+                    //__________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+                }
             </div>
 
 
@@ -145,8 +206,9 @@ const CourseList = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
-
-export default CourseList;
+// export
+//     export default {wow}
+export default CourseList
