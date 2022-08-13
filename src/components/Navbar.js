@@ -29,9 +29,9 @@ const Navbar = () => {
             </div>
             <div className="middlemobile"><b><a href="/">EwaldMusic</a></b></div>
             <form className="top-nav-area">
-                <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} />
+                <input name="search" type="text" placeholder="search course..." className="search-form" style={{ paddingLeft: "2%", color: "#121B15" }} disabled />
 
-            </form><button onClick={displaySearch} onSubmit={displaySearch} className="search-button">SEARCH</button>
+            </form><button onClick={displaySearch} onSubmit={displaySearch} className="search-button" disabled>SEARCH</button>
             <div className="nav-right">
                 <a href="/"><i className="fa-solid fa-magnifying-glass newSearch" style={{paddingRight:"2%"}}></i></a>
                 <a href="admission">Admissions</a>

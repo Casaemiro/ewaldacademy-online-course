@@ -54,7 +54,7 @@ const Team = () => {
                     <img src={slide2} className="card-img-top team-image" alt="..." />
                     <div className="card-body team-role">
                         <h5 className="card-title staff-name">T.Evaristus</h5>
-                        <p className="card-text faint">Ganitor (Software engr Iknitespace, bassist).</p>
+                        <p className="card-text faint">Janitor (Software engr Iknitespace, bassist).</p>
                     </div>
                 </div>
                 <div className=" col-md-2 p-2  col-5 col-sm-3" >
